@@ -1,0 +1,11 @@
+num = int(input("请输入一个三位正整数:345 "))
+
+# 分别提取百位、十位、个位
+hundreds = num // 100        # 整除100得到百位
+tens = (num // 10) % 10      # 先整除10去掉个位，再对10取余得到十位
+units = num % 10             # 对10取余得到个位
+
+digit_sum = hundreds + tens + units
+
+print(f"百位: {hundreds}, 十位: {tens}, 个位: {units}")
+print(f"各位数字之和: {digit_sum}"
